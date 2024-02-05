@@ -1,0 +1,6 @@
+framework module Pods_PPPMax {
+  umbrella header "Pods-PPPMax-umbrella.h"
+
+  export *
+  module * { export * }
+}

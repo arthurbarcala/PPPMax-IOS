@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BA209290F08F02845405F0 /* Pods_PPPMax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC010CCF5BF303B1B7DA315 /* Pods_PPPMax.framework */; };
+		77EFD5B2857528870F33B8C6 /* Pods_PPPMax_PPPMaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED07029F877D3A5D9D34AF7B /* Pods_PPPMax_PPPMaxUITests.framework */; };
+		E38C1D4A2B5AF78400E50588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D492B5AF78400E50588 /* AppDelegate.swift */; };
+		E38C1D4C2B5AF78400E50588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D4B2B5AF78400E50588 /* SceneDelegate.swift */; };
+		E38C1D4E2B5AF78400E50588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D4D2B5AF78400E50588 /* ViewController.swift */; };
+		E38C1D512B5AF78400E50588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38C1D4F2B5AF78400E50588 /* Main.storyboard */; };
+		E38C1D532B5AF78800E50588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38C1D522B5AF78800E50588 /* Assets.xcassets */; };
+		E38C1D562B5AF78800E50588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38C1D542B5AF78800E50588 /* LaunchScreen.storyboard */; };
+		E38C1D612B5AF78800E50588 /* PPPMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */; };
+		E38C1D6B2B5AF78800E50588 /* PPPMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */; };
+		E38C1D6D2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */; };
+		F0BB5989A20B2822BC9B23A7 /* Pods_PPPMaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4180A0A183A4A895926DD7 /* Pods_PPPMaxTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E38C1D5D2B5AF78800E50588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E38C1D3E2B5AF78400E50588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E38C1D452B5AF78400E50588;
+			remoteInfo = PPPMax;
+		};
+		E38C1D672B5AF78800E50588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E38C1D3E2B5AF78400E50588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E38C1D452B5AF78400E50588;
+			remoteInfo = PPPMax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004E6B8169FA759CABB490E7 /* Pods-PPPMax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMax.debug.xcconfig"; path = "Target Support Files/Pods-PPPMax/Pods-PPPMax.debug.xcconfig"; sourceTree = "<group>"; };
+		12CBAF81E7AD38069114E477 /* Pods-PPPMaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMaxTests.release.xcconfig"; path = "Target Support Files/Pods-PPPMaxTests/Pods-PPPMaxTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C1246B0548224F05B87EEC5 /* Pods-PPPMax-PPPMaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMax-PPPMaxUITests.release.xcconfig"; path = "Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F4180A0A183A4A895926DD7 /* Pods_PPPMaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPPMaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5955C0880C6913B6C894B919 /* Pods-PPPMaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMaxTests.debug.xcconfig"; path = "Target Support Files/Pods-PPPMaxTests/Pods-PPPMaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC010CCF5BF303B1B7DA315 /* Pods_PPPMax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPPMax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD92B5B5B59A6AE0E599DD51 /* Pods-PPPMax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMax.release.xcconfig"; path = "Target Support Files/Pods-PPPMax/Pods-PPPMax.release.xcconfig"; sourceTree = "<group>"; };
+		E38C1D462B5AF78400E50588 /* PPPMax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPPMax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38C1D492B5AF78400E50588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E38C1D4B2B5AF78400E50588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E38C1D4D2B5AF78400E50588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E38C1D502B5AF78400E50588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E38C1D522B5AF78800E50588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E38C1D552B5AF78800E50588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E38C1D572B5AF78800E50588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38C1D5C2B5AF78800E50588 /* PPPMaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPPMaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxTests.swift; sourceTree = "<group>"; };
+		E38C1D662B5AF78800E50588 /* PPPMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPPMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITests.swift; sourceTree = "<group>"; };
+		E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED07029F877D3A5D9D34AF7B /* Pods_PPPMax_PPPMaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPPMax_PPPMaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9A5F3BF95431A72F73FCCB /* Pods-PPPMax-PPPMaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMax-PPPMaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E38C1D432B5AF78400E50588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BA209290F08F02845405F0 /* Pods_PPPMax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D592B5AF78800E50588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0BB5989A20B2822BC9B23A7 /* Pods_PPPMaxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D632B5AF78800E50588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EFD5B2857528870F33B8C6 /* Pods_PPPMax_PPPMaxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314DA17281CAA1BF0E058992 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC010CCF5BF303B1B7DA315 /* Pods_PPPMax.framework */,
+				ED07029F877D3A5D9D34AF7B /* Pods_PPPMax_PPPMaxUITests.framework */,
+				2F4180A0A183A4A895926DD7 /* Pods_PPPMaxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38C1D3D2B5AF78400E50588 = {
+			isa = PBXGroup;
+			children = (
+				E38C1D792B5B0FA500E50588 /* Modules */,
+				E38C1D482B5AF78400E50588 /* PPPMax */,
+				E38C1D5F2B5AF78800E50588 /* PPPMaxTests */,
+				E38C1D692B5AF78800E50588 /* PPPMaxUITests */,
+				E38C1D472B5AF78400E50588 /* Products */,
+				FE00499DA8CC9D6EDA878A10 /* Pods */,
+				314DA17281CAA1BF0E058992 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E38C1D472B5AF78400E50588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D462B5AF78400E50588 /* PPPMax.app */,
+				E38C1D5C2B5AF78800E50588 /* PPPMaxTests.xctest */,
+				E38C1D662B5AF78800E50588 /* PPPMaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E38C1D482B5AF78400E50588 /* PPPMax */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D492B5AF78400E50588 /* AppDelegate.swift */,
+				E38C1D4B2B5AF78400E50588 /* SceneDelegate.swift */,
+				E38C1D4F2B5AF78400E50588 /* Main.storyboard */,
+				E38C1D522B5AF78800E50588 /* Assets.xcassets */,
+				E38C1D542B5AF78800E50588 /* LaunchScreen.storyboard */,
+				E38C1D572B5AF78800E50588 /* Info.plist */,
+			);
+			path = PPPMax;
+			sourceTree = "<group>";
+		};
+		E38C1D5F2B5AF78800E50588 /* PPPMaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */,
+			);
+			path = PPPMaxTests;
+			sourceTree = "<group>";
+		};
+		E38C1D692B5AF78800E50588 /* PPPMaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */,
+				E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */,
+			);
+			path = PPPMaxUITests;
+			sourceTree = "<group>";
+		};
+		E38C1D792B5B0FA500E50588 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D7A2B5B0FAF00E50588 /* MainModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E38C1D7A2B5B0FAF00E50588 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D7F2B5B100900E50588 /* Router */,
+				E38C1D7E2B5B0FF900E50588 /* Entity */,
+				E38C1D7D2B5B0FF100E50588 /* Presenter */,
+				E38C1D7C2B5B0FC800E50588 /* Interactor */,
+				E38C1D7B2B5B0FBB00E50588 /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		E38C1D7B2B5B0FBB00E50588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D4D2B5AF78400E50588 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E38C1D7C2B5B0FC800E50588 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E38C1D7D2B5B0FF100E50588 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E38C1D7E2B5B0FF900E50588 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E38C1D7F2B5B100900E50588 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE00499DA8CC9D6EDA878A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				004E6B8169FA759CABB490E7 /* Pods-PPPMax.debug.xcconfig */,
+				DD92B5B5B59A6AE0E599DD51 /* Pods-PPPMax.release.xcconfig */,
+				FB9A5F3BF95431A72F73FCCB /* Pods-PPPMax-PPPMaxUITests.debug.xcconfig */,
+				2C1246B0548224F05B87EEC5 /* Pods-PPPMax-PPPMaxUITests.release.xcconfig */,
+				5955C0880C6913B6C894B919 /* Pods-PPPMaxTests.debug.xcconfig */,
+				12CBAF81E7AD38069114E477 /* Pods-PPPMaxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E38C1D452B5AF78400E50588 /* PPPMax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38C1D702B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMax" */;
+			buildPhases = (
+				7712AEBA1A840443B584DBAB /* [CP] Check Pods Manifest.lock */,
+				E38C1D422B5AF78400E50588 /* Sources */,
+				E38C1D432B5AF78400E50588 /* Frameworks */,
+				E38C1D442B5AF78400E50588 /* Resources */,
+				DB461C41909A191C22FB984D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPPMax;
+			productName = PPPMax;
+			productReference = E38C1D462B5AF78400E50588 /* PPPMax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E38C1D5B2B5AF78800E50588 /* PPPMaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38C1D732B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMaxTests" */;
+			buildPhases = (
+				415B546218F9B1FC518FA38C /* [CP] Check Pods Manifest.lock */,
+				E38C1D582B5AF78800E50588 /* Sources */,
+				E38C1D592B5AF78800E50588 /* Frameworks */,
+				E38C1D5A2B5AF78800E50588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E38C1D5E2B5AF78800E50588 /* PBXTargetDependency */,
+			);
+			name = PPPMaxTests;
+			productName = PPPMaxTests;
+			productReference = E38C1D5C2B5AF78800E50588 /* PPPMaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E38C1D652B5AF78800E50588 /* PPPMaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38C1D762B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMaxUITests" */;
+			buildPhases = (
+				2151B69B3B7AEF6C4354A9E1 /* [CP] Check Pods Manifest.lock */,
+				E38C1D622B5AF78800E50588 /* Sources */,
+				E38C1D632B5AF78800E50588 /* Frameworks */,
+				E38C1D642B5AF78800E50588 /* Resources */,
+				2899F6ED1AD1BDE682429D5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E38C1D682B5AF78800E50588 /* PBXTargetDependency */,
+			);
+			name = PPPMaxUITests;
+			productName = PPPMaxUITests;
+			productReference = E38C1D662B5AF78800E50588 /* PPPMaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E38C1D3E2B5AF78400E50588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E38C1D452B5AF78400E50588 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E38C1D5B2B5AF78800E50588 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E38C1D452B5AF78400E50588;
+					};
+					E38C1D652B5AF78800E50588 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E38C1D452B5AF78400E50588;
+					};
+				};
+			};
+			buildConfigurationList = E38C1D412B5AF78400E50588 /* Build configuration list for PBXProject "PPPMax" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E38C1D3D2B5AF78400E50588;
+			productRefGroup = E38C1D472B5AF78400E50588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E38C1D452B5AF78400E50588 /* PPPMax */,
+				E38C1D5B2B5AF78800E50588 /* PPPMaxTests */,
+				E38C1D652B5AF78800E50588 /* PPPMaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E38C1D442B5AF78400E50588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38C1D562B5AF78800E50588 /* LaunchScreen.storyboard in Resources */,
+				E38C1D532B5AF78800E50588 /* Assets.xcassets in Resources */,
+				E38C1D512B5AF78400E50588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D5A2B5AF78800E50588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D642B5AF78800E50588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2151B69B3B7AEF6C4354A9E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PPPMax-PPPMaxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2899F6ED1AD1BDE682429D5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		415B546218F9B1FC518FA38C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PPPMaxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7712AEBA1A840443B584DBAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PPPMax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB461C41909A191C22FB984D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PPPMax/Pods-PPPMax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PPPMax/Pods-PPPMax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PPPMax/Pods-PPPMax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E38C1D422B5AF78400E50588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38C1D4E2B5AF78400E50588 /* ViewController.swift in Sources */,
+				E38C1D4A2B5AF78400E50588 /* AppDelegate.swift in Sources */,
+				E38C1D4C2B5AF78400E50588 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D582B5AF78800E50588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38C1D612B5AF78800E50588 /* PPPMaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38C1D622B5AF78800E50588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38C1D6D2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift in Sources */,
+				E38C1D6B2B5AF78800E50588 /* PPPMaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E38C1D5E2B5AF78800E50588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E38C1D452B5AF78400E50588 /* PPPMax */;
+			targetProxy = E38C1D5D2B5AF78800E50588 /* PBXContainerItemProxy */;
+		};
+		E38C1D682B5AF78800E50588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E38C1D452B5AF78400E50588 /* PPPMax */;
+			targetProxy = E38C1D672B5AF78800E50588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E38C1D4F2B5AF78400E50588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38C1D502B5AF78400E50588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E38C1D542B5AF78800E50588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38C1D552B5AF78800E50588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E38C1D6E2B5AF78800E50588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E38C1D6F2B5AF78800E50588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E38C1D712B5AF78800E50588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004E6B8169FA759CABB490E7 /* Pods-PPPMax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PPPMax/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E38C1D722B5AF78800E50588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD92B5B5B59A6AE0E599DD51 /* Pods-PPPMax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PPPMax/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E38C1D742B5AF78800E50588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5955C0880C6913B6C894B919 /* Pods-PPPMaxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPPMax.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PPPMax";
+			};
+			name = Debug;
+		};
+		E38C1D752B5AF78800E50588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CBAF81E7AD38069114E477 /* Pods-PPPMaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPPMax.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PPPMax";
+			};
+			name = Release;
+		};
+		E38C1D772B5AF78800E50588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9A5F3BF95431A72F73FCCB /* Pods-PPPMax-PPPMaxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PPPMax;
+			};
+			name = Debug;
+		};
+		E38C1D782B5AF78800E50588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1246B0548224F05B87EEC5 /* Pods-PPPMax-PPPMaxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pppmax.PPPMaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PPPMax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E38C1D412B5AF78400E50588 /* Build configuration list for PBXProject "PPPMax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38C1D6E2B5AF78800E50588 /* Debug */,
+				E38C1D6F2B5AF78800E50588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38C1D702B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38C1D712B5AF78800E50588 /* Debug */,
+				E38C1D722B5AF78800E50588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38C1D732B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38C1D742B5AF78800E50588 /* Debug */,
+				E38C1D752B5AF78800E50588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38C1D762B5AF78800E50588 /* Build configuration list for PBXNativeTarget "PPPMaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38C1D772B5AF78800E50588 /* Debug */,
+				E38C1D782B5AF78800E50588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E38C1D3E2B5AF78400E50588 /* Project object */;
+}
