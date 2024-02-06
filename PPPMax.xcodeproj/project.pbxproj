@@ -18,6 +18,7 @@
 		E38C1D612B5AF78800E50588 /* PPPMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */; };
 		E38C1D6B2B5AF78800E50588 /* PPPMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */; };
 		E38C1D6D2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */; };
+		E4FFF9192B72A96B00539303 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFF9182B72A96B00539303 /* MovieData.swift */; };
 		F0BB5989A20B2822BC9B23A7 /* Pods_PPPMaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4180A0A183A4A895926DD7 /* Pods_PPPMaxTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		E38C1D662B5AF78800E50588 /* PPPMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPPMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITests.swift; sourceTree = "<group>"; };
 		E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4FFF9182B72A96B00539303 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = SOURCE_ROOT; };
 		ED07029F877D3A5D9D34AF7B /* Pods_PPPMax_PPPMaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPPMax_PPPMaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9A5F3BF95431A72F73FCCB /* Pods-PPPMax-PPPMaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPPMax-PPPMaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-PPPMax-PPPMaxUITests/Pods-PPPMax-PPPMaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 		E38C1D7E2B5B0FF900E50588 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				E4FFF9182B72A96B00539303 /* MovieData.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FFF9192B72A96B00539303 /* MovieData.swift in Sources */,
 				E38C1D4E2B5AF78400E50588 /* ViewController.swift in Sources */,
 				E38C1D4A2B5AF78400E50588 /* AppDelegate.swift in Sources */,
 				E38C1D4C2B5AF78400E50588 /* SceneDelegate.swift in Sources */,

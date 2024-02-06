@@ -1,55 +1,57 @@
-//
-//  ViewController.swift
-//  PPPMax
-//
-//  Created by Arthur Silva on 19/01/24.
-//
+import UIKit
 
-import SnapKit
-
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UISearchBarDelegate{
+    
     @IBOutlet weak var searchBar: UISearchBar!
     var movieName: String?
+    var queryMovieName: String?
     var queryString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.delegate = self
     }
     
     @IBAction func onButtonClick(_ sender: Any) {
         movieName = searchBar.text ?? ""
-        queryString = movieName?.replacingOccurrences(of: " ", with: "+")
+        queryMovieName = movieName?.replacingOccurrences(of: " ", with: "+")
+        queryString = "https://api.themoviedb.org/3/search/movie?query=\(queryMovieName!)&api_key=f33197e7d286b19bb9d55aeecca2975f"
         
-        var request = URLRequest(url: URL(string: "https://api.themoviedb.org/3/search/movie?query=\(queryString)&api_key=f33197e7d286b19bb9d55aeecca2975f")!)
-        request.httpMethod = "GET"
-
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            // Check for network errors
-            if let error = error {
-                print("Error: \(error)")
-                return
+        if let url = URL(string: queryString!) {
+            let session = URLSession(configuration: .default)
+            
+            
+            let task = session.dataTask(with: url){data, urlResponse, error in
+                if error != nil{
+                    print(error!)
+                    return
+                } else {
+                    if let safeData = data {
+                        self.parseJSON(movieData: safeData)
+                    }
+                }
             }
-
-            // Check if there is data
-            guard let data = data else {
-                print("No data received")
-                return
-            }
-
-            // Print response data as a string
-            if let httpResponse = response as? HTTPURLResponse {
-                print("HTTP Response Status Code: \(httpResponse.statusCode)")
-                print("Response Data: \(String(data: data, encoding: .utf8) ?? "No response data")")
-            } else {
-                print("Invalid HTTP response")
-            }
+            
+            task.resume()
+            
         }
-
-        // Resume the task to execute the request
-        dataTask.resume()
-
+        
         
     }
+    func parseJSON(movieData: Data){
+        let decoder = JSONDecoder()
+        do{
+            let decodedData = try decoder.decode(MovieData.self, from: movieData)
+            for movie in decodedData.results{
+                print(movie.title)
+                print(movie.overview)
+                print("---")
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
 }
 
