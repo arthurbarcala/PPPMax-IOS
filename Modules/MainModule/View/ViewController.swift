@@ -1,16 +1,24 @@
 import UIKit
 
-class ViewController: UIViewController, UISearchBarDelegate{
-    
+class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var searchBar: UISearchBar!
     var movieName: String?
     var queryMovieName: String?
     var queryString: String?
     
+    @IBOutlet weak var movieTable: UITableView!
+    
+    var listViewData: [MovieResult] = [
+        MovieResult(movieTitle: "Olá!", movieDescription: "Tente pesquisar por um filme.")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         searchBar.delegate = self
+        movieTable.dataSource = self
+        
+        
     }
     
     @IBAction func onButtonClick(_ sender: Any) {
@@ -43,14 +51,33 @@ class ViewController: UIViewController, UISearchBarDelegate{
         let decoder = JSONDecoder()
         do{
             let decodedData = try decoder.decode(MovieData.self, from: movieData)
+            listViewData = []
             for movie in decodedData.results{
-                print(movie.title)
-                print(movie.overview)
-                print("---")
+                listViewData.append(MovieResult(movieTitle: movie.title, movieDescription: movie.overview))
+            }
+            if listViewData.isEmpty {
+                listViewData.append(MovieResult(movieTitle: "Nenhum filme encontrado!", movieDescription: "Tente pesquisar por outro título."))
+            }
+            
+            DispatchQueue.main.async {
+                self.movieTable.reloadData()
             }
         } catch {
             print(error)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listViewData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = listViewData[indexPath.row]
+        let cell = movieTable.dequeueReusableCell(withIdentifier: "MovieTableCell", for: indexPath) as! MovieListCell
+        
+        cell.movieTitle.text = item.movieTitle
+        cell.movieDescription.text = item.movieDescription
+        return cell
     }
     
 }
