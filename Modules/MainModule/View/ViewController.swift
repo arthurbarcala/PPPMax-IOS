@@ -24,6 +24,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
                 print("Failed to fetch data.")
                 return
             }
+            
             self.listViewData = MoviePresenter.parseJSON(movieData: data)
             
             DispatchQueue.main.async{
