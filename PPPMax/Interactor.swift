@@ -1,34 +1,31 @@
 import Foundation
 
-protocol AnyInteractor {
-    static func fetchMovies(movieNameQuery: String, completion: @escaping (Data?) -> Void)
+protocol MovieInteracting {
+    func fetchMovies(movieQueryName: String?, completion: @escaping (Result<[MovieResult], Error>) -> Void)
 }
 
-class MovieInteractor: AnyInteractor {
-    static func fetchMovies(movieNameQuery: String, completion: @escaping (Data?) -> Void) {
-        let movieName = movieNameQuery
-        let queryMovieName = movieName.replacingOccurrences(of: " ", with: "+")
-        let queryString = "https://api.themoviedb.org/3/search/movie?query=\(queryMovieName)&api_key=f33197e7d286b19bb9d55aeecca2975f"
-
-        guard let url = URL(string: queryString) else {
-            completion(nil)
+class MovieInteractor: MovieInteracting {
+    let apiService: NetworkServicing
+    let presenter: MoviePresenting
+    
+    init(apiService: NetworkServicing, presenter: MoviePresenting) {
+        self.apiService = apiService
+        self.presenter = presenter
+    }
+    
+    enum MovieError: Error {
+        case invalidQuery
+    }
+    
+    func fetchMovies(movieQueryName: String?, completion: @escaping (Result<[MovieResult], Error>) -> Void) {
+        guard let movieQueryName = movieQueryName else {
+            completion(.failure(MovieError.invalidQuery))
             return
         }
-
-        let session = URLSession(configuration: .default)
-
-        let task = session.dataTask(with: url) { data, _, error in
-            guard error == nil else {
-                print("Error: \(error!)")
-                completion(nil)
-                return
-            }
-
-            completion(data)
+        
+        self.apiService.fetchMovies(movieNameQuery: movieQueryName) { data in
+            self.presenter.presentMovies(movieData: data)
+            completion(.success(data)) 
         }
-
-        task.resume()
     }
-
 }
-

@@ -1,13 +1,13 @@
 import UIKit
 
-class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var movieTable: UITableView!
+    var interactor: MovieInteractor!
     
     var listViewData: [MovieResult] = [
-        MovieResult(movieTitle: "Olá!", movieDescription: "Tente pesquisar por um filme.")
-    ]
+            MovieResult(movieTitle: "Olá!", movieDescription: "Tente pesquisar por um filme.")
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,20 +15,23 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
         searchBar.delegate = self
         movieTable.dataSource = self
         
+        let factory = Factory()
         
+        let apiService = factory.createNetworkService()
+        let presenter = factory.createMoviePresenter(view: self)
+        self.interactor = factory.createMovieInteractor(apiService: apiService, presenter: presenter)
     }
     
     @IBAction func onButtonClick(_ sender: Any) {
-        MovieInteractor.fetchMovies(movieNameQuery: searchBar.text ?? ""){data in
-            guard let data = data else {
-                print("Failed to fetch data.")
-                return
-            }
-            self.listViewData = MoviePresenter.parseJSON(movieData: data)
-            
-            DispatchQueue.main.async{
-                self.movieTable.reloadData()
-            }
+        interactor.fetchMovies(movieQueryName: searchBar.text) { data in
+        }
+    }
+    
+    func displayMovies(movies: [MovieResult]) {
+        self.listViewData = movies
+        
+        DispatchQueue.main.async {
+            self.movieTable.reloadData()
         }
     }
     
@@ -44,6 +47,4 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
         cell.movieDescription.text = item.movieDescription
         return cell
     }
-    
 }
-

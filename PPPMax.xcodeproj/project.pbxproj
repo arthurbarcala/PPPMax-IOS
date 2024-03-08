@@ -18,8 +18,11 @@
 		E38C1D612B5AF78800E50588 /* PPPMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */; };
 		E38C1D6B2B5AF78800E50588 /* PPPMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */; };
 		E38C1D6D2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */; };
+		E45AD6EA2B90FE780089D59F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AD6E92B90FE780089D59F /* NetworkService.swift */; };
 		E4608C3C2B83E06A00D06D35 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4608C3B2B83E06A00D06D35 /* Interactor.swift */; };
 		E4608C3F2B83EABB00D06D35 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4608C3E2B83EABB00D06D35 /* Presenter.swift */; };
+		E4B881D02B924FC500CACE07 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B881CF2B924FC500CACE07 /* Factory.swift */; };
+		E4E0C7362B89236600C82EBE /* MovieInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E0C7352B89236600C82EBE /* MovieInteractorTests.swift */; };
 		E4FFF9192B72A96B00539303 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFF9182B72A96B00539303 /* MovieData.swift */; };
 		E4FFF91D2B72DD1400539303 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFF91C2B72DD1400539303 /* MovieListCell.swift */; };
 		E4FFF91F2B72DEC300539303 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFF91E2B72DEC300539303 /* MovieResult.swift */; };
@@ -64,8 +67,11 @@
 		E38C1D662B5AF78800E50588 /* PPPMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPPMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38C1D6A2B5AF78800E50588 /* PPPMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITests.swift; sourceTree = "<group>"; };
 		E38C1D6C2B5AF78800E50588 /* PPPMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45AD6E92B90FE780089D59F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E4608C3B2B83E06A00D06D35 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = PPPMax/Interactor.swift; sourceTree = SOURCE_ROOT; };
 		E4608C3E2B83EABB00D06D35 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		E4B881CF2B924FC500CACE07 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		E4E0C7352B89236600C82EBE /* MovieInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractorTests.swift; sourceTree = "<group>"; };
 		E4FFF9182B72A96B00539303 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = SOURCE_ROOT; };
 		E4FFF91C2B72DD1400539303 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		E4FFF91E2B72DEC300539303 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieResult.swift; path = Modules/MainModule/View/MovieResult.swift; sourceTree = SOURCE_ROOT; };
@@ -114,6 +120,8 @@
 		E38C1D3D2B5AF78400E50588 = {
 			isa = PBXGroup;
 			children = (
+				E4B881CE2B924FB400CACE07 /* Factory */,
+				E45AD6E82B90F5A90089D59F /* Services */,
 				E38C1D792B5B0FA500E50588 /* Modules */,
 				E38C1D482B5AF78400E50588 /* PPPMax */,
 				E38C1D5F2B5AF78800E50588 /* PPPMaxTests */,
@@ -139,9 +147,7 @@
 			children = (
 				E38C1D492B5AF78400E50588 /* AppDelegate.swift */,
 				E38C1D4B2B5AF78400E50588 /* SceneDelegate.swift */,
-				E38C1D4F2B5AF78400E50588 /* Main.storyboard */,
 				E38C1D522B5AF78800E50588 /* Assets.xcassets */,
-				E38C1D542B5AF78800E50588 /* LaunchScreen.storyboard */,
 				E38C1D572B5AF78800E50588 /* Info.plist */,
 			);
 			path = PPPMax;
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E38C1D602B5AF78800E50588 /* PPPMaxTests.swift */,
+				E4E0C7352B89236600C82EBE /* MovieInteractorTests.swift */,
 			);
 			path = PPPMaxTests;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		E38C1D7B2B5B0FBB00E50588 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E45AD6E72B90F0770089D59F /* Storyboard */,
 				E38C1D4D2B5AF78400E50588 /* ViewController.swift */,
 				E4FFF91C2B72DD1400539303 /* MovieListCell.swift */,
 			);
@@ -223,6 +231,31 @@
 			children = (
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		E45AD6E72B90F0770089D59F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E38C1D4F2B5AF78400E50588 /* Main.storyboard */,
+				E38C1D542B5AF78800E50588 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E45AD6E82B90F5A90089D59F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E45AD6E92B90FE780089D59F /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4B881CE2B924FB400CACE07 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E4B881CF2B924FC500CACE07 /* Factory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		FE00499DA8CC9D6EDA878A10 /* Pods */ = {
@@ -481,6 +514,8 @@
 				E4FFF91F2B72DEC300539303 /* MovieResult.swift in Sources */,
 				E4608C3F2B83EABB00D06D35 /* Presenter.swift in Sources */,
 				E4FFF9192B72A96B00539303 /* MovieData.swift in Sources */,
+				E4B881D02B924FC500CACE07 /* Factory.swift in Sources */,
+				E45AD6EA2B90FE780089D59F /* NetworkService.swift in Sources */,
 				E38C1D4E2B5AF78400E50588 /* ViewController.swift in Sources */,
 				E38C1D4A2B5AF78400E50588 /* AppDelegate.swift in Sources */,
 				E4608C3C2B83E06A00D06D35 /* Interactor.swift in Sources */,
@@ -492,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E0C7362B89236600C82EBE /* MovieInteractorTests.swift in Sources */,
 				E38C1D612B5AF78800E50588 /* PPPMaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

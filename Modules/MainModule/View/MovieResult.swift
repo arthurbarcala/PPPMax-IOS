@@ -1,6 +1,6 @@
 import Foundation
 
-struct MovieResult{
+struct MovieResult: Equatable {
     let movieTitle: String
     let movieDescription: String
 }

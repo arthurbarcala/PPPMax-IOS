@@ -1,26 +1,36 @@
 import Foundation
 
-protocol AnyPresenter {
-    static func parseJSON(movieData: Data) -> [MovieResult]
+protocol MoviePresenting {
+    func presentMovies(movieData: [MovieResult])
 }
 
-class MoviePresenter: AnyPresenter{
-    static func parseJSON(movieData: Data) -> [MovieResult]{
-        let decoder = JSONDecoder()
-        do{
-            let decodedData = try decoder.decode(MovieData.self, from: movieData)
-            var listViewData: [MovieResult] = []
-            for movie in decodedData.results{
-                listViewData.append(MovieResult(movieTitle: movie.title, movieDescription: movie.overview))
-            }
-            if listViewData.isEmpty {
-                listViewData.append(MovieResult(movieTitle: "Nenhum filme encontrado!", movieDescription: "Tente pesquisar por outro título."))
-            }
-            
-            return listViewData
-        } catch {
-            print(error)
-        }
-        return []
+class MoviePresenter: MoviePresenting {
+    weak var view: ViewController?
+    
+    init(view: ViewController) {
+        self.view = view
+    }
+
+    func presentMovies(movieData: [MovieResult]) {
+        view?.displayMovies(movies: movieData)
     }
 }
+
+class MockMoviePresenter: MoviePresenting {
+    weak var view: ViewController?
+    
+    init(view: ViewController) {
+        self.view = view
+    }
+    
+    func presentMovies(movieData: [MovieResult]) {
+        print("Movies presented.")
+    }
+}
+
+
+
+
+
+
+
